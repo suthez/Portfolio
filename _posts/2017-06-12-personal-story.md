@@ -23,7 +23,11 @@ Another task was to setup some security measures on our server. To do this I fol
 
 Part of this task was also to help find a solution for backing up our database that holds all of our node data. This isn't critical right now for testing purposes but will definitely be needed for final product.
 
-Our solution we used was to use the official postgrtes back up that exists as part of postgres. There were some problems with syntax but some research provided a solution. The documentation for the backup can be found here.
+
+![iptables](/blog/iptables.png "IPTables Setup")
+
+
+Our solution we used was to use the official postgrtes back up that exists as part of postgres. There were some problems with syntax but some research provided a solution.
 * * *
 
 ### Task 3
