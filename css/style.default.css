@@ -85,6 +85,85 @@ section {
 .box {
   margin-bottom: 30px;
 }
+
+ /* Icon when the collapsible content is shown */
+  .btn:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+
+  }
+
+  /* Icon when the collapsible content is hidden */
+  .btn.collapsed:after {
+    content: "\e080";
+  }
+
+  #collap {
+    color: white;
+    background-color: #333; 
+    border-color: none;
+  }
+
+  #collap:hover {
+    border-color: none;
+  }
+
+  #collap:focus {
+    outline: none;
+  }
+
+/* Navbar styling *************************************/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+/* end of Navbar styling **********************************/
+
 .content {
   position: relative;
   width: 100%;
@@ -110,12 +189,51 @@ section {
 .services .box {
   margin-top: 20px;
 }
-.services .icon {
+.icon {
   font-size: 50px;
 }
+
+button.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size:25px;
+    transition: 0.4s;
+}
+
+button.accordion.active, .accordion:hover {
+    
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: black;
+    color: white;
+}
+
 #map {
   height: 600px;
 }
+
 .contact-form {
   margin-bottom: 40px;
 }
@@ -226,6 +344,7 @@ NAVBAR
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: #eeeeee;
+  outline: none;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -239,6 +358,7 @@ NAVBAR
 .nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #444444;
+  outline: none;
 }
 .nav-tabs {
   border-bottom: 1px solid #dddddd;
@@ -292,6 +412,7 @@ NAVBAR
   min-height: 40px;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   .navbar {
