@@ -98,9 +98,8 @@
           <div class="col-md-6">
             <div class="icon"><i class="fa fa-user"></i></div>  <h2 class="heading">About</h2>
             <p class="lead">A little about me....</p>
-            <p>I love all technology and enjoy solving problems using a variety of I.T skills. Skills picked up externally and from the I.T. degree completed 2017 at Otago Polytechnic.</p>
+            <p>I love all technology and enjoy solving problems using a variety of I.T skills. These skills were learned externally and from the I.T. degree completed 2017 at Otago Polytechnic.</p>
             <br>
-            Such as: 
              <ul>
                 <li>Web</li>
                 <li>Networking</li> 
@@ -118,12 +117,109 @@
     </section>
     <!-- About end-->
 
-    <!-- Timeline-->
+    <!-- PROJECT ONE -->
+     <section id="project1" class="text">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-md-12">
+		            <h2 class="heading">Project One <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#projectOne" style="background-color: white; color: black;"></button></h2>
+		            <div id="projectOne" class="collapse">
+		            <div class="row">
+		              <div class="col-md-6">
+		              Task 1 <br>
+		              Case Study<br>
+		              <p>
+		              	Our first task this semester was to write up a case study on a related subject to do with our Project. I chose a project that was undertaken by a group in New York/New Jersey. The people involved were a part of TheThingsNetwork New York Community. The project was based on smart gardens and utilizing these to help minimize the effects of extreme water events. Such as torrential rain, hurricanes and floods etc.
+		              </p>
+
+		              </div>
+		              <div class="col-md-6">
+		              	Task 2<br>
+		              	IPtables and Backup<br>
+		              	<p>
+		              		Another task was to setup some security measures on our server. To do this I followed a guide on setting up iptables
+
+							[iptables guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04)
+
+							Part of this task was also to help find a solution for backing up our database that holds all of our node data. This isn't critical right now for testing purposes but will definitely be needed for final product.
+
+
+							![iptables](/blog/iptables.png "IPTables Setup")
+							<br>
+							<img src="img/iptables.png" alt="IPTables">
+							<cite>IP Tables</cite>
+							<br>
+
+
+							Our solution we used was to use the official postgrtes back up that exists as part of postgres. There were some problems with syntax but some research provided a solution.
+		              	</p>
+
+              		  </div>
+              		  <div class="row">
+              		  	<div class="col-md-6">
+              		  		Task 3<br>
+              		  		Gateway/Raspberry pi<br>
+              		  		<p>
+              		  			To get ready for our gateway I had to clear the SD card and put a fresh installation of jesse lite onto it. The first step was to archive what the other group had done. This was followed by downloading a copy of jesse lite (lite because it was smaller in size) and writing it to the SD card. I then inserted the card into thew raspberry pi and went onto setting up ssh settings. This was slightly problematic as the keyboard layout was not matching so some solutions had to be researched. 
+
+								After this, I tried setting the raspberry pi up for gateway configuration and followed certain guides but it was not working out so was handled by other members of the group. 
+              		  		</p>	
+              		  	</div>
+              		  	<div class="col-md-6">
+							Task 4<br>
+							Github Pages<br>
+							<p>
+								I was tasked with managing our teams github repository. This included archiving past teams work and implementing something different that was more flexible. For this we decided to use static github pages run with Jekyll and formatted with Markdown language. Styling was made easy with several default layouts included when using Jekyll. 
+
+								There is a certain process to go through setting up Jekyll locally on your machine and is easier if you have certain operating systems. Basically everything but Windows. Windows does have support but it is limited and can have more issues. One specific problem I ran into while setting up was the way our pages were structured. We were using github pages and not creating directly from the master repository, meaning some changes had to be made so the pages knew where to read the css and layouts from. 
+
+								The guides used to set up are below.
+
+								<h5>Installing Jekyll on Windows</h5>
+								<p>
+									Guides used:<br>
+									<ul>
+										<li><a href="https://labs.sverrirs.com/jekyll/">Jekyll 3 on Windows</a></li>
+										<li><a href="http://jekyllrb.com/docs/windows/#installation-via-chocolatey">Installation via Chocolatey</a></li>
+									</ul>
+
+								</p>
+							</p>
+              		  	</div>
+              		  	<div class="row">
+              		  		<h5>Reflection</h5>
+              		  		<p>
+              		  			At the beginning of this project it seemed promising with the funds to back up what we thought would be a reliable solution. This however was soon to be discovered not to be the case. As this technology is still fairly new there is not a lot of support or information out there for a low budget solution. 
+
+								So our effots became more 'hacky' - trying to get older stuff to work and even our project manager buying his own hardware, although not in the right frequency. 
+
+								More research was done and we came to the decision to buy different hardware that seemed to be more promising, had a lot of documentation and support. While waiting for our new toy to arrive we managed to set up a working prototype with the gear we had - just in time for mini showcase! I found the showcase to be a good exercise as I had not had a lot to do with the setup of the server, gateway or node. As I was the only person from group avaliable at the time, I was responsible for moving the hardware and setting it up which in itself taught me a lot about how it worked. 
+
+								I think the groups efforts have produced a promising prototype that should be able to be transferred to the new hardware and on the right frequency. I definitely feel like we have made a good start and will have more of an idea of direction for next semester.
+								Overall it was a slow start but looking back we have come a long way.
+              		  		</p>
+              		  	</div>
+
+              		  </div>
+            </div>
+        	</div>
+           </div>
+
+     		</div>
+
+     	</div>
+
+     </section>
+
+    <!-- PROJECT ONE end -->
+
+    <!-- PROJECT 2 Timeline-->
     <section id="projectTimeline" style="background-color: #333;" class="text-page section-inverse">
       <div class="container">
         <div class="row services">
           <div class="col-md-12">
-            <div class="icon"><i class="fa fa-calendar"></i></div> <h2 class="heading">Project Two Timeline</h2>
+            <div class="icon"><i class="fa fa-calendar"></i></div> <h2 class="heading">Project Two Timeline <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#projectTwo"></button></h2>
+            <div id="projectTwo" class="collapse">
             <div class="row">
             <p class="lead" style="color: white">This is a weekly timeline with brief descriptions of the tasks and activities done</p>
               <div class="col-sm-4">
@@ -312,13 +408,14 @@
                 </div>
               </div>
             </div>
+        	</div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Timeline end-->
+    <!-- PROJECT 2 Timeline end-->
     
-    <!-- Add Web and Other icons TODO PROJET ONE HERE
+    <!-- Add Web and Other icons TODO 
     <section id="portfolio" class="gallery">
       <div class="container clearfix">
         <div class="row">
@@ -371,7 +468,8 @@
     	<div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading">Project Two</h2>
+            <h2 class="heading">Project Two - Reflective Story <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#refStory2" style="background-color: white; color: black;"></button></h2>
+            <div id="refStory2" class="collapse">
             <div class="row">
               <div class="col-sm-6">
               	If you have checked out Project One you will discover it was done in a slightly different way. So improving from Project One I decided to change the layout and add a lot more detail. As Project One was done in a different layout/template I also decided to change and make improvements.
@@ -386,36 +484,20 @@
               <div class="col-sm-6">
               </div>
             </div>
+        	</div>
            </div>
          </div>
          </div>
     </section>
-    <section id="text" style="background-color: #333;" class="text-page section-inverse">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="heading">Project Two</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to being other. </p>
-              </div>
-              <div class="col-sm-6">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Project 2 end-->
+  <!-- Story end -->
+
     <!-- Professional start -->
     <section id="professional" class="text">
     	<div class="container">
         <div class="row">
         	<div class="col-md-12">
-        		<h2 class="heading">Professional Proficiency</h2>
+        		<h2 class="heading">Professional Proficiency <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#profProf" style="background-color: white; color: black;"></button></h2>
+        			<div id="profProf" class="collapse">
         		    <div class="row">
 		              <div class="col-sm-6">
 		              	<h4>How often do you attend scheduled group meetings/scrums?</h4>
@@ -426,21 +508,22 @@
 		              <div class="col-sm-6">
 		              	<h4>How well did you communicate with others in your group or subgroup?</h4>
 		              	<h1>★ ★ ★ ★ ★</h1>
-		                <p>Main form of communication for the team was Slack. I would respond fairly quickly, answer questions and also ask questions when needed. As stated in the last answer - I would communicate whenever I could not attend a meeting. Here are some Slack examples:
+		                <p>Main form of communication for the team was Slack. I would respond fairly quickly, answer questions and also ask questions when needed. As stated in the last answer - I would communicate whenever I could not attend a meeting. Here are some Slack examples:</p>
 		                	<!-- SLACK IMAGES HERE -->
 		              </div>
             		</div>
             		<div class="row">
             			<div class="col-sm-6">
             				<h4>How well did you document your work throughout the project?</h4>
-            				<h1>★ ★ ★ ★ </h1>
-            				<p></p>
+            				<h1>★ ★ </h1>
+            				<p>Probably not as well as I could have. I made tried to take notes while undergoing some activity and ended up with  </p>
             			</div>
             			<div class="col-sm-6">
             				<h4>How well did you respond to problems or changing requirements?</h4>
-            				<h1>★ ★ ★ ★ </h1>
+            				<h1>★ ★ ★</h1>
             			</div>
             		</div>
+            	</div>
         	</div>
         </div>
     	</div>
@@ -452,7 +535,8 @@
     	<div class="container">
     	<div class="row">
 	    	<div class="col-md-12">
-	        		<h2 class="heading" style="color: white;">Technical Proficiency</h2>
+	        		<h2 class="heading" style="color: white;">Technical Proficiency <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#profTech"></button></h2>
+	        		<div id="profTech" class="collapse">
 	        		    <div class="row">
 	        		    	<div class="col-sm-6">
 	            				<h4>What is the overall quality of your code like?</h4>
@@ -475,6 +559,7 @@
 	            				<h1>★ ★ ★ ★ </h1>
 	            			</div>
 	        		    </div>
+	        		</div>
 	        </div>
 	    </div>
 		</div>
