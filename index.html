@@ -24,12 +24,9 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-
-     <!-- Javascript for collapse funtion + one stylesheet for bootstrap -->
  
-  
-
   </head>
+
   <body data-spy="scroll" data-target="#navigation" data-offset="120">
     <!-- intro-->
     <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">      
@@ -39,7 +36,7 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
               <p class="italic">Oh, hello, nice to meet you!</p>
-              <h1>I am Zoe Sutherland.</h1>
+              <h1>I am <br>Zoe Sutherland.</h1>
               <p class="italic">Welcome to my online portfolio.</p>
             </div>
           </div>
@@ -47,17 +44,17 @@
       </div>
     </section>
     <!-- intro end-->
+
     <!-- navbar-->
     <header class="header">
       <div class="sticky-wrapper">
         <div role="navigation" class="navbar navbar-default">
           <div class="container">
-          <!--
-            <div class="navbar-header">
-              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#intro" class="navbar-brand scroll-to"><img src="img/logo.png" alt=""></a>
+           	 <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#intro" class="navbar-brand scroll-to"></a>
             </div>
-           -->
-            <div id="navigation" class="collapse navbar-collapse navbar-left">
+ 
+        <div id="navigation" class="collapse navbar-collapse navbar-left">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#intro">Home</a></li>
                 <li><a href="#about">About </a></li>
@@ -91,6 +88,7 @@
       </div>
     </header>
     <!-- /.navbar-->
+
     <!-- about-->
     <section id="about" class="text">
       <div class="container">
@@ -98,7 +96,7 @@
           <div class="col-md-6">
             <div class="icon"><i class="fa fa-user"></i></div>  <h2 class="heading">About</h2>
             <p class="lead">A little about me....</p>
-            <p>I love all technology and enjoy solving problems using a variety of I.T skills. These skills were learned externally and from the I.T. degree completed 2017 at Otago Polytechnic.</p>
+            <p>I love all technology and enjoy solving problems using a variety of I.T skills. These skills were self taught via discovery, curiosity and a hunger to learn which lead to a completion of an I.T. degree, 2017, at Otago Polytechnic.</p>
             <br>
              <ul>
                 <li>Web</li>
@@ -126,39 +124,42 @@
 		            <div id="projectOne" class="collapse">
 		            <div class="row">
 		              <div class="col-md-6">
-		              Task 1 <br>
-		              Case Study<br>
+		             <h5>Task 1 </h5><br>
+		              <strong>Case Study</strong><br><br>
 		              <p>
 		              	Our first task this semester was to write up a case study on a related subject to do with our Project. I chose a project that was undertaken by a group in New York/New Jersey. The people involved were a part of TheThingsNetwork New York Community. The project was based on smart gardens and utilizing these to help minimize the effects of extreme water events. Such as torrential rain, hurricanes and floods etc.
 		              </p>
 
 		              </div>
-		              <div class="col-md-6">
-		              	Task 2<br>
-		              	IPtables and Backup<br>
+		              </div>
+		              <div class="row">
+		              <div class="col-md-8">
+		              	<h5>Task 2</h5><br>
+		              	<strong>IPtables and Backup</strong><br><br>
 		              	<p>
 		              		Another task was to setup some security measures on our server. To do this I followed a guide on setting up iptables
 
-							[iptables guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04)
+							<ul><li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04">Firewall Guide </a></li></ul>
 
 							Part of this task was also to help find a solution for backing up our database that holds all of our node data. This isn't critical right now for testing purposes but will definitely be needed for final product.
 
-
-							![iptables](/blog/iptables.png "IPTables Setup")
+							<br><br>
+							<img src="img/iptables.png" alt="IPTables" style="width: auto;">
 							<br>
-							<img src="img/iptables.png" alt="IPTables">
 							<cite>IP Tables</cite>
-							<br>
+							<br><br>
 
 
 							Our solution we used was to use the official postgrtes back up that exists as part of postgres. There were some problems with syntax but some research provided a solution.
 		              	</p>
 
               		  </div>
+              		</div>
+
               		  <div class="row">
               		  	<div class="col-md-6">
-              		  		Task 3<br>
-              		  		Gateway/Raspberry pi<br>
+              		  		<h5>Task 3</h5><br>
+              		  		<strong>Gateway/Raspberry Pi</strong><br>
               		  		<p>
               		  			To get ready for our gateway I had to clear the SD card and put a fresh installation of jesse lite onto it. The first step was to archive what the other group had done. This was followed by downloading a copy of jesse lite (lite because it was smaller in size) and writing it to the SD card. I then inserted the card into thew raspberry pi and went onto setting up ssh settings. This was slightly problematic as the keyboard layout was not matching so some solutions had to be researched. 
 
@@ -166,12 +167,12 @@
               		  		</p>	
               		  	</div>
               		  	<div class="col-md-6">
-							Task 4<br>
-							Github Pages<br>
+							<h5>Task 4</h5><br>
+							<strong>Github Pages</strong><br>
 							<p>
-								I was tasked with managing our teams github repository. This included archiving past teams work and implementing something different that was more flexible. For this we decided to use static github pages run with Jekyll and formatted with Markdown language. Styling was made easy with several default layouts included when using Jekyll. 
+								I was tasked with managing our teams Github repository. This included archiving past teams work and implementing something different that was more flexible. For this we decided to use static Github pages run with Jekyll and formatted with Markdown language. Styling was made easy with several default layouts included when using Jekyll. 
 
-								There is a certain process to go through setting up Jekyll locally on your machine and is easier if you have certain operating systems. Basically everything but Windows. Windows does have support but it is limited and can have more issues. One specific problem I ran into while setting up was the way our pages were structured. We were using github pages and not creating directly from the master repository, meaning some changes had to be made so the pages knew where to read the css and layouts from. 
+								There is a certain process to go through setting up Jekyll locally on your machine and is easier if you have certain operating systems. Basically everything but Windows. Windows does have support but it is limited and can have more issues. One specific problem I ran into while setting up was the way our pages were structured. We were using Github pages and not creating directly from the master repository, meaning some changes had to be made so the pages knew where to read the css and layouts from. 
 
 								The guides used to set up are below.
 
@@ -186,7 +187,9 @@
 								</p>
 							</p>
               		  	</div>
+              		  </div>
               		  	<div class="row">
+              		  		<div class="col-md-12">
               		  		<h5>Reflection</h5>
               		  		<p>
               		  			At the beginning of this project it seemed promising with the funds to back up what we thought would be a reliable solution. This however was soon to be discovered not to be the case. As this technology is still fairly new there is not a lot of support or information out there for a low budget solution. 
@@ -358,9 +361,9 @@
                   	<div id="demo12" class="collapse">
                   	<ul>
                   		<li>Working on showcase wbesite</li>
-                  		<li>Setup jekyll local build for showcase Github</li>
+                  		<li>Setup Jekyll local build for showcase Github</li>
                   	</ul>
- 					<p>TODO: Research github mqtt dashboards</p>
+ 					<p>TODO: Research Github mqtt dashboards</p>
  				</div>
                 </div>
               </div>
@@ -471,15 +474,47 @@
             <h2 class="heading">Project Two - Reflective Story <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#refStory2" style="background-color: white; color: black;"></button></h2>
             <div id="refStory2" class="collapse">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-md-12">
               	If you have checked out Project One you will discover it was done in a slightly different way. So improving from Project One I decided to change the layout and add a lot more detail. As Project One was done in a different layout/template I also decided to change and make improvements.
               	<br><br>
 
-              	Picking up where we left off with Project 1: Again, maintaining the Projects Github website which, after all the changes, was renamed to IoT Dunedin. This was to to avoid all the hassle of renaming our Github repository - i.e breaking jekyll links.<br><br>
+              	Picking up where we left off with Project 1: Again, maintaining the Projects Github website which, after all the changes, was renamed to IoT Dunedin. This was to to avoid all the hassle of renaming our Github repository - i.e breaking Jekyll links.<br><br>
 
-              	After a rough first semester I wanted to really put more time into project. There was more time avaliable as we only had two other classes, instead of three. The workload was a lot less which made it easier. So I decided to jump right in and get working on the project website. I started by going through and checking links. On discovery of broken links I went about fixing them. It was decided that the menu needed work but this seemed a daunting task for a number of reasons. One such reason was because we were using a pre-made jekyll theme (made for serving static github pages) and customising the theme was becoming very messy. I tried to implement a multi-dropdown nav but this was a bit hacky and resulted in styling problems when testing responsiveness. This lead to the group discussion of changing the theme. To perhaps a boostrap theme that is already responsive and a lot easier to customise. So this resulted in another big change for the website. <br><br>
+              	After a rough first semester I wanted to put more time into project. Having only two other classes, instead of three, the workload was a lot less which made it easier. So I decided to jump right in and get working on the project website. I started by going through and checking links. On discovery of broken links I went about fixing them. A task I didn't get around to implementing was a multi-drop-down navigation menu. This was a little difficult to implement as we were using a pre-made Jekyll theme (made for serving static Github pages). This theme did not implement navigation bars and therefore had no multi-drop-down functionality. Making your own custom css styles was fine but often resulted in clashes with the pre-made css and responsiveness. So while I could implement a drop-down functionality it would not fit the style when the screen size changed. I got frustrated with working on this and so took a break from it. <br><br>
 
-              	To
+              	The next task was brought up by Campbell, to research and implement a privacy policy for end user. I thought this sounded like a fairly easy task, but as we discovered it was harder than we thought. Research resulted in sites that claimed you could easily create one using their website but then asking for payment at the end. It was difficult to determine what exactly we would need seeings as we did not even have a full plan for the user side of things. This task was soon set aside for a later date.<br><br>
+
+              	I decided to contribute to the research and implementation of server security. I started off by searching and documenting best practices for Ubuntu servers. Relevant information was saved in a Notepad file. This led me to setting a banner for the server. This was done using <a href="https://www.techrepublic.com/article/how-to-harden-ubuntu-server-16-04-security-in-five-steps/"><strong>this</strong></a> website tutorial and <a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20">this</a> website to create the ASCII 'IoT Dunedin' banner. I followed the same site instructions as the banner for network hardening. This was to cover spoofing, block ping requests, and SYN attacks amongst other things. After implementing this, Oscar found he could no longer ping the server, so I had to undo the security I had implemented. During troubleshooting discovered I needed to restart the service for it to pick up the changes. I fixed this ASAP, straight after Oscar messaged me about the issue.<br><br>
+
+              	 Patrick also started working on server security. He took this on more as his main task than I did, so I gave him my notes and he implemented majority of the security.<br><br>
+
+              	 A group decision saw our Github repository move to a new location to start fresh, as we decided to change the name. The reason for this was to avoid the headache of having to make changes on all pages where the repository name was and other errors. This gave us a new url and instead of 'TheThingsNetwork' it was now 'DunedinIoT'. We then discovered Google still had the old link available on a search, which would then lead to a 404. To remedy this I first did a quick search and found you could request Google to remove a dead link from coming up in a search.<br><br>
+
+              	  Back to working on the website, I decided to add a favicon to replace the default and boring page looking icon. I used <a href="https://www.freefavicon.com/freefavicons/"><strong>this</strong></a> free favicon site and chose a bright, appealing icon.  I also continued working on fixing the multi-drop-down menu. This still was proving hard to fix and so a group decision was made to find a new theme. It was recommended to use a Bootstrap theme which was responsive. <br>
+              	  Bootstrap has many useful functionalities that are fairly easy to implement which was a bonus. Team member Nick found a one-page Bootstrap template that was quite a nice style and looked professional. Being a one-page website meant that there were no links to other pages merely a link to an anchor in the page, scrolling automatically to the anchor. This posed a problem as we had many different pages and thought this wouldn't be suitable. However, using Jekyll meant that we could create different layouts. So we created a new layout to use for pages other than the Homepage.<br><br>
+
+
+              	As this semester had new members joining the group, I had two extra people working on the website. This made it a little difficult to decide what each member was doing and sometimes resulted in overlapping - people working on the same thing. As these guys were new to static Github pages it was my role to show them how to set it up so you could locally build and test. The benefit of this was to be able to make changes locally, test,view and then push the desired changed to Github. This reduced the amount of commits made to Github. <br>Using Jekyll with Windows could result in errors when trying to run or build from a different location. Often we would have to troubleshoot to get going again with <a href="https://otagopolytechnic.github.io/DunedinIoT/tutorials/githubJekyll/README.html"><strong>these steps</strong></a> or, if failing this, pulling the repository again from Github.
+
+              	<br><br>
+
+              	Nick found and put up a picture of the Dunedin Railway Station as our banner for homepage. It was brought up that this would probably need permission or at least a reference to the picture. I took this on and started researching about licensing and copyright. Luckily a search for this picture brought me to the Wikipedia site of the author which had a CC (Creative Commons) license. I used the <a href="https://creativecommons.org/use-remix/get-permission/">creative commons</a> website to get the exact syntax for giving attribution. <br><br>
+
+              	The next task I started on was implementing a breadcrumb navigation. This was because our site was quite the labyrinth when navigating and there was no easy way to get around the site. Breadcrumbs gives you a trail so you can easily return to previous pages or the Home page. This seemed easy enough apart from the fact that what I was looking for was a dynamic breadcrumb menu. Given the fact I did not fully understand Jekyll and liquid tags, finding a solution was difficult. I finally found a solution which was to add a file and make sure to include it on every page. The website that contains the link of the file is <a href="http://jekyllcodex.org/without-plugin/breadcrumbs/"><strong>Jekyll Codex<strong></a>. Once the breadcrumb nav was implemented, I started working on the showcase website. I started off by implementing Jekyll so I could locally build. I then researched about mqtt dashboards, but more specifically a Github solution. It was soon found that we were having problems with static Github and it not being able to make requests. We then decided to host our showcase website on our server. This bypassed the issues we were experiencing. After a lot of research I came across a helpful Github repository. <a href="http://ddewaele.github.io/mqtt-dashboard-gauge/"><strong>This</strong></a> site seemed to have what we were looking for. From here, I went on to discover where the author of the Github site got the gauge from. It was <a href="https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/jQuery/Light/"><strong>here</strong></a> that I found a lot of good documentation for the gauge such as changing the range colours, ticks and label formatting. <br><br>
+
+              	The next step was to connect to mqtt. For this I spoke to Oscar who had knowledge of this. After much testing soon I was connected, subscribed and receiving messages from the server! I wrote up some documentation on this which you can check out <a href="https://docs.google.com/document/d/1ToRPjwK9ro3r_-oAYVmzyd3_q3-ChYMBED5QNYChkao/edit?usp=sharing"><strong>here</strong></a>. <br><br>
+
+              	For the second last week there were some last minute touch ups for the showcase website, followed by setting up for showcase night. On the night of showcase we got the chance to interact with the public and show off our accomplishments. In the end we had a working gateway, server, nodes, and webapp connecting and subscribing to the server. Also we had done some range testing of a node to the gateway and made an impressive map which covered a lot of Dunedin. We were happily surprised by the range which was around 6kms when we expected only 2-2.5 kms. <br><br>
+
+              	The last week will be spent finishing up the Github repository, getting ready to hand over to the next year's project students, and writing up our group technical report.<br><br>
+
+              	<h4>Conclusion</h4>
+              	In conclusion, I have found this particular project to be a challenge. With the technology being so new and the concept not being greatly documented it was hard to know what to do at times. Often I had issues of being stuck and lacking in motivation. This possibly resulted in not getting as much work done as I could have. Also, it was hard to share tasks as there wasn't a whole lot to do. At these times I would talk to Tom our project manager and find ways to contribute or get ideas when I had none. This was very helpful and I always came away feeling refreshed and ready to work. <br><br>
+
+              	I feel our team did a good job considering the state of the project when we started. It has been long and arduous but the end result is quite satisfying and exciting for the future.<br><br>
+
+              	Overall, I enjoyed being a part of something so new and different. I feel that with such an interest in IoT and LoRA networks it has given me skills and knowledge that others may not have. I feel I have progressed and am ready to graduate and start a career in IT.
+ 
               </div>
               <div class="col-sm-6">
               </div>
@@ -499,28 +534,46 @@
         		<h2 class="heading">Professional Proficiency <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#profProf" style="background-color: white; color: black;"></button></h2>
         			<div id="profProf" class="collapse">
         		    <div class="row">
-		              <div class="col-sm-6">
+		              <div class="col-sm-12">
 		              	<h4>How often do you attend scheduled group meetings/scrums?</h4>
 		              	<h1>★ ★ ★ ★ </h1>
 		                <p>Scheduled meetings were weekly, every Monday and Thursday. I feel I was fairly proficient and reliable at turning up to meetings. Whenever I could not attend, which was very rarely, I would communicate that asap to the team and/or Tom (team supervisor). 
 		                </p>
+		                <br><br>
+		                <img src="img/slack1.png">
+		                <cite>Slack image showing the notification of absence</cite>
+		                <br>
 		              </div>
+		          </div>
+		          <br>
+		          <div class="row">
 		              <div class="col-sm-6">
 		              	<h4>How well did you communicate with others in your group or subgroup?</h4>
 		              	<h1>★ ★ ★ ★ ★</h1>
 		                <p>Main form of communication for the team was Slack. I would respond fairly quickly, answer questions and also ask questions when needed. As stated in the last answer - I would communicate whenever I could not attend a meeting. Here are some Slack examples:</p>
-		                	<!-- SLACK IMAGES HERE -->
+		               <br><br>
+		               <img src="img/slack2.png">
+		               <cite></cite>
+		               <br>
 		              </div>
             		</div>
+            		<br>
             		<div class="row">
             			<div class="col-sm-6">
             				<h4>How well did you document your work throughout the project?</h4>
             				<h1>★ ★ </h1>
-            				<p>Probably not as well as I could have. I made tried to take notes while undergoing some activity and ended up with  </p>
+            				<p>Probably not as well as I could have. I made tried to write notes in Slack as a reminder and to expand on it later on. I also would take bigger notes on research about a certain topic as well as links.</p>
+            				<cite>Notes on Slack</cite>
+            				<img src="img/slack3.png">
+            				
             			</div>
+            		</div>
+            		<br>
+            		<div class="row">
             			<div class="col-sm-6">
             				<h4>How well did you respond to problems or changing requirements?</h4>
             				<h1>★ ★ ★</h1>
+            				<p>As a lot of this project was kind of made up on the fly, I guess the response was a bit slow but in the end there were results. </p>
             			</div>
             		</div>
             	</div>
@@ -538,25 +591,43 @@
 	        		<h2 class="heading" style="color: white;">Technical Proficiency <button type="button" class="btn btn-sm collapsed" id="collap" data-toggle="collapse" data-target="#profTech"></button></h2>
 	        		<div id="profTech" class="collapse">
 	        		    <div class="row">
-	        		    	<div class="col-sm-6">
+	        		    	<div class="col-sm-12">
 	            				<h4>What is the overall quality of your code like?</h4>
-	            				<h1>★ ★ ★ ★ </h1>
-	            				<p></p>
+	            				<h1>★ ★ ★</h1>
+	            				<p>I was not heavily involved in the coding process but from what I did do I think the quality was okay. I more like to get things going rather than focusing on the most efficient way or 'best' way to do something. That would be something I would go back to after getting the functionality going. <br> 
+	            					Where I did something that I thought was not obvious, to someone else or even to myself looking at it later on, I tried to comment what was happening and what it was for.<br>
+	            					Here is an example of commenting.<br>
+	            					<img src="img/commenting.png"></p>
+	            					<cite>Commenting inside of a javascript file</cite><br><br>
 	            			</div>
-	            			<div class="col-sm-6">
+	            		</div>
+	            		<br>
+	            		<div class="row">
+	            			<div class="col-sm-12">
 	            				<h4>How well did you follow best practices in development?</h4>
 	            				<h1>★ ★ ★ ★ </h1>
+	            				<p>I tried my best to follow best practices but possibly didn't manage it all of the time. I would comment where possible, commit to Github, use Trello, use Slack, and attend weekly meetings. Here is an example of using Trello.</p>
+	            				<img src="img/trello.png">
+	            				<cite>IoT Dunedin Trello board</cite><br><br>
 	            			</div>
 	        		    </div>
+	        		    <br>
 	        		    <div class="row">
-	        		    	<div class="col-sm-6">
+	        		    	<div class="col-sm-12">
 	            				<h4>How well did you use appropriate version control?</h4>
 	            				<h1>★ ★ ★ ★ </h1>
-	            				<p></p>
+	            				<p>I feel I used version control where possible. Here is a screenshot of my commits.</p><br>
+	            				<img src="img/commits.png">
+	            				<cite>Commits to Github</cite><br><br>
+
 	            			</div>
-	            			<div class="col-sm-6">
+	            		</div>
+	            		<br>
+	            			<div class="row">
+	            			<div class="col-sm-12">
 	            				<h4>To what extent do you think you contributed an equal portion of the overall project?</h4>
-	            				<h1>★ ★ ★ ★ </h1>
+	            				<h1>★ ★ ★</h1>
+	            				<p>I did not end up doing as much as some others, I would've liked to have done more, however I struggled with knowing what to do and how. I am pleased with a few of the things I managed. I found sharing the workload and successfully collaborating with others in the group was a bit difficult at times.</p>
 	            			</div>
 	        		    </div>
 	        		</div>
@@ -565,17 +636,29 @@
 		</div>
     </section>
     <!-- Technical end -->
+
+    <!-- CV -->
+     <section id="technical" style="background-color: #333;" class="text-page section-inverse">
+    	<div class="container">
+    	<div class="row">
+	    	<div class="col-md-12">
+	    		<h2 class="heading" style="color: white;">CV</h2>
+	    		<h4>Here is a copy of my current CV (as of 10.11.17)</h4>
+
+	    		<object type="application/pdf" data="img/ZoeSutherland-cv.pdf" width="100%" height="800px"></object>
+	    	</div>
+	    </div>
+	</div>
+</section>
+
+    <!-- CV end -->
     <!-- contact-->
     <section id="contact" style="background-color: #fff;" class="text-page"> 
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2 class="heading">Contact</h2>
-           
-                
-           
-           
-           
+           <h5>Email</h5><p>zoe.sutherland11@gmail.com</p><br>                              
           </div>
         </div>
       </div>
